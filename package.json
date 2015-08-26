@@ -33,6 +33,7 @@
     },
 
     "devDependencies": {
-        "grunt-contrib-nodeunit": "^0.4.1"
+        "grunt-contrib-nodeunit": "^0.4.1",
+        "grunt-contrib-clean"   : "^0.6.0"
     }
 }
