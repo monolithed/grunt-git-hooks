@@ -37,7 +37,7 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		'git-hooks': {
 			hooks: {
-				'prepare-commit-msg': 'tests/hooks/prepare-commit-msg.sh'
+				'prepare-commit-msg': 'hooks/prepare-commit-msg.sh'
 			}
 		}
 	});
