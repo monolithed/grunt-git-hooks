@@ -36,3 +36,5 @@ npm-debug.log
 .idea
 *.iml
 /cache
+/tests
+

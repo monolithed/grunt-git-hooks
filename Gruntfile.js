@@ -3,10 +3,6 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         'git-hooks': {
-            options: {
-                hooks: 'cache/.git/hooks'
-            },
-
             hooks: {
                 'prepare-commit-msg': 'tests/hooks/prepare-commit-msg.sh'
             }
