@@ -42,8 +42,9 @@ module.exports = function (grunt) {
 		}
 	});
 
+	grunt.loadTasks('tasks');
 	grunt.loadNpmTasks('grunt-git-hooks');
-	grunt.registerTask('default', ['commit']);
+	grunt.registerTask('default', ['git-hooks']);
 };
 ```
 
@@ -65,22 +66,17 @@ Default: `.git/hooks`
 This option as an advanced way to choose in which directory the hooks should be placed.
 
 ```js
-module.exports = function (grunt) {
-	grunt.initConfig({
-		'git-hooks': {
-			options: {
-				hooks: 'test/.git/hooks'
-			},
+grunt.initConfig({
+	'git-hooks': {
+		options: {
+			hooks: 'test/.git/hooks'
+		},
 
-			hooks: {
-				'prepare-commit-msg': 'prepare-commit-msg.sh'
-			}
+		hooks: {
+			'prepare-commit-msg': 'prepare-commit-msg.sh'
 		}
-	});
-
-	grunt.loadNpmTasks('grunt-git-hooks');
-	grunt.registerTask('default', ['mock']);
-};
+	}
+});
 ```
 
 ### Tests
@@ -88,7 +84,6 @@ module.exports = function (grunt) {
 ```
 grunt test
 ```
-
 
 ### License
 
