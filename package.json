@@ -1,0 +1,38 @@
+{
+    "name"   : "grunt-git-hooks",
+    "version": "0.0.1",
+    "author" : "Abashkin Alexander <monolithed@gmail.com>",
+    "homepage": "https://github.com/monolithed/grunt-git-hooks.git",
+    "license": "MIT",
+
+    "description": "A Grunt plugin to help bind Grunt tasks to Git hooks",
+
+    "keywords": [ "grunt", "git", "hooks", "commit" ],
+
+    "man": "README.md",
+
+    "engines": {
+        "node": ">=0.10.28"
+    },
+
+    "repository": {
+        "type": "git",
+        "url" :  "https://github.com/monolithed/grunt-git-hooks.git"
+    },
+
+    "bugs": {
+        "url": "https://github.com/monolithed/grunt-git-hooks/issues"
+    },
+
+    "scripts": {
+        "test": "grunt test"
+    },
+
+    "dependencies": {
+        "grunt": "^0.4.5"
+    },
+
+    "devDependencies": {
+        "grunt-contrib-nodeunit": "^0.4.1"
+    }
+}
