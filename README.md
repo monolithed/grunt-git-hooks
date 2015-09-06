@@ -60,7 +60,7 @@ NOTE: Grunt tasks will not remove your hooks (only copying)!
 #### hooks
 
 Type: `string`<br />
-Default: `.git/hooks`
+Default: `.git`
 
 This option as an advanced way to choose in which directory the hooks should be placed.
 
@@ -68,7 +68,7 @@ This option as an advanced way to choose in which directory the hooks should be 
 grunt.initConfig({
 	'git-hooks': {
 		options: {
-			hooks: 'test/.git/hooks'
+			git: '.git'
 		},
 
 		hooks: {

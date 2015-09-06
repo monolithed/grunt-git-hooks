@@ -13,12 +13,12 @@ var fs = require('fs'),
 module.exports = function (grunt) {
     grunt.registerMultiTask('git-hooks', 'Git Hooks', function () {
         var options = this.options({
-            hooks: '.git/hooks'
+            git: '.git'
         });
 
         for (var hook in this.data) {
             if (Object.prototype.hasOwnProperty.call(this.data, hook)) {
-                var file = path.join(options.hooks, hook);
+                var file = path.join(options.git, 'hooks', hook);
 
                 grunt.file.copy(this.data[hook], file);
 

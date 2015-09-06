@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         'git-hooks': {
             options: {
-                hooks: 'cache/git/hooks'
+                git: 'cache/git'
             },
 
             hooks: {
