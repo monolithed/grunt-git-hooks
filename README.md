@@ -57,7 +57,7 @@ NOTE: Grunt tasks will not remove your hooks (only copying)!
 
 ### Options
 
-#### hooks
+#### git
 
 Type: `string`<br />
 Default: `.git`
