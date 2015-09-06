@@ -42,7 +42,6 @@ module.exports = function (grunt) {
 		}
 	});
 
-	grunt.loadTasks('tasks');
 	grunt.loadNpmTasks('grunt-git-hooks');
 	grunt.registerTask('default', ['git-hooks']);
 };
