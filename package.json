@@ -1,6 +1,6 @@
 {
     "name"   : "grunt-git-hooks",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "author" : "Abashkin Alexander <monolithed@gmail.com>",
     "homepage": "https://github.com/monolithed/grunt-git-hooks.git",
     "license": "MIT",
